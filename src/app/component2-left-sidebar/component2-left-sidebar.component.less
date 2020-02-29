@@ -1,0 +1,68 @@
+@externalColor: rgba(102, 255, 0, .5);
+
+#rightSidebar {
+  #contour {
+    display: inline-block;
+    border: 1px solid black;
+    outline: @externalColor solid thick;
+    width: 100%;
+    margin: .5rem 0 .5rem 0;
+
+    p {
+      display: block;
+      color: black;
+      text-shadow: 1px 0 0 @externalColor, 1px 1px 0 @externalColor, 0 1px 0 @externalColor, -1px 1px 0 @externalColor, -1px 0 0 @externalColor, -1px -1px 0 @externalColor, 0 -1px 0 @externalColor, 1px -1px 0 @externalColor;
+      margin-bottom: 0;
+      font-size: .75rem;
+    }
+  }
+}
+
+.content {
+  margin : .5rem
+}
+
+.news{
+  border: 1px solid black;
+  margin: .5rem;
+  padding: .5rem;
+  max-height: 194px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    background-color: @externalColor;
+  }
+}
+
+.news a {
+  font-size: 4vw;
+}
+
+@media screen and (min-width:575px) {
+  .news a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .news {
+    max-height: 74px;
+    white-space: nowrap;
+  }
+}
+
+.subContent{
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+ .noPadding{
+   padding-right: 0;
+   padding-left: 0;
+ }
+
+ h5 {
+   font-size: 1rem;
+ }
+
+

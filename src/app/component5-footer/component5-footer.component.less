@@ -1,0 +1,22 @@
+@externalColor: rgba(138, 43, 226, .5);
+
+footer {
+  margin: .3rem .3rem 0 .3rem;
+
+  #contour {
+    display: inline-block;
+    border: 1px solid black;
+    outline: @externalColor solid thick;
+    width: 100%;
+    margin: .5rem 0 .5rem 0;
+
+    p {
+      display: block;
+      color: black;
+      text-shadow: 1px 0 0 @externalColor, 1px 1px 0 @externalColor, 0 1px 0 @externalColor, -1px 1px 0 @externalColor, -1px 0 0 @externalColor, -1px -1px 0 @externalColor, 0 -1px 0 @externalColor, 1px -1px 0 @externalColor;
+      margin-bottom: 0;
+      font-size: .75rem;
+    }
+
+  }
+}

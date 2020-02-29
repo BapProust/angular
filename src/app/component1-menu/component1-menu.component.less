@@ -1,0 +1,54 @@
+@externalColor: rgba(240, 255, 0, .5);
+
+header {
+  #contour {
+    display: inline-block;
+    border: 1px solid black;
+    outline: @externalColor solid thick;
+    width: 100%;
+    margin : .5rem 0 .5rem 0;
+
+    p {
+      display: block;
+      color: black;
+      text-shadow: 1px 0 0 @externalColor, 1px 1px 0 @externalColor, 0 1px 0 @externalColor, -1px 1px 0 @externalColor, -1px 0 0 @externalColor, -1px -1px 0 @externalColor, 0 -1px 0 @externalColor, 1px -1px 0 @externalColor;
+      margin-bottom: 0;
+      font-size: .75rem;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        white-space:nowrap;
+
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          cursor: pointer;
+          float: left;
+          margin: 0 1% 1%;
+          padding: 0.5em;
+          width: 18%;
+          min-width: 80px;
+          list-style-type: none;
+          border: 1px solid black;
+          text-align: center;
+          overflow: hidden;
+
+          a {
+          }
+
+          &:hover {
+            background-color: @externalColor;
+          }
+        }
+      }
+    }
+  }
+}
