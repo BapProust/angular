@@ -8,6 +8,7 @@ import { Component2LeftSidebarComponent } from './component2-left-sidebar/compon
 import { Component3RightSidebarComponent } from './component3-right-sidebar/component3-right-sidebar.component';
 import { Component4MiddleContentComponent } from './component4-middle-content/component4-middle-content.component';
 import { Component5FooterComponent } from './component5-footer/component5-footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Component5FooterComponent } from './component5-footer/component5-footer
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

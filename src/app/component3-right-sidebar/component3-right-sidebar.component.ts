@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component3RightSidebarComponent implements OnInit {
 
+  flower: any = 'assets/flower.jpg';
+
   constructor() { }
 
   ngOnInit(): void {

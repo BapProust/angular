@@ -1,0 +1,33 @@
+@externalColor: rgba(255, 20, 147, .5);
+
+.rightSidebar {
+  #contour {
+    display: inline-block;
+    border: 1px solid black;
+    outline: @externalColor solid thick;
+    width: 100%;
+    margin: .5rem 0 .5rem 0;
+
+    p {
+      display: block;
+      color: black;
+      text-shadow: 1px 0 0 @externalColor, 1px 1px 0 @externalColor, 0 1px 0 @externalColor, -1px 1px 0 @externalColor, -1px 0 0 @externalColor, -1px -1px 0 @externalColor, 0 -1px 0 @externalColor, 1px -1px 0 @externalColor;
+      margin-bottom: 0;
+      font-size: .75rem;
+    }
+
+    .content {
+      margin: .5rem;
+
+      .image {
+        display: block;
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 192px;
+        }
+      }
+    }
+  }
+}
